@@ -10,7 +10,7 @@ class Loader {
             return this.wasmFallback(path);
         }
 
-        const { instance } = WebAssembly.instantiateStreaming(fetch(path));
+        const { instance } = await WebAssembly.instantiateStreaming(fetch(path));
 
         return instance?.exports;
     }
@@ -23,5 +23,4 @@ class Loader {
 
         return instance?.exports;
     }
-
 }
