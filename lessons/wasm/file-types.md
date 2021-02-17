@@ -2,7 +2,7 @@
 path: "/wasm/types"
 section: "Web Assembly"
 title: "File Types"
-order: "2B"
+order: "2C"
 description: ""
 ---
 

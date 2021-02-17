@@ -1,9 +1,30 @@
 ---
 path: "/low-level/types"
-title: "Numeric Types"
-order: "1F"
+title: "Numeric types"
+order: "1G"
 description: ""
 section: "Low Level Stuff"
 ---
 
-This is page [two](https://en.wikipedia.org/wiki/2).
+The two main types of numbers we care about are floating points and integers.
+
+###### Floating Point
+`142.24`
+
+###### Integer
+`142`
+
+JavaScript only has floating point numbers but most environments don't display the dot after a number.
+
+``` js
+21.000
+// 21
+```
+
+> Note: [Number.MAX_SAFE_INTEGER](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) shows the largest integer that can be safely used in JavaScript.
+
+
+Under the hood, numbers in JavaScript are 64-bit floating points whereas in Web Assembly all memory pointers are 32-bits.
+
+
+![32 bits](./images/32bits.png)

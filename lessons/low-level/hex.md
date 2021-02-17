@@ -41,11 +41,9 @@ Confused? Totally ok! The first time coming across hex may seem a bit daunting b
 I've found this [site](https://www.bbc.co.uk/bitesize/guides/z3fgcdm/revision/2) by the BBC useful for understanding hexadecimal.
 
 
-##### Exercise
+#### Exercise
 <details>
   <summary>What number does 1F7 represent?</summary>
 
 `503`
 </details>
-
-#### Converting

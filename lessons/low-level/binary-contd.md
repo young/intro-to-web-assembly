@@ -1,6 +1,6 @@
 ---
 path: "/low-level/binary-contd"
-title: "Binary Continued"
+title: "Binary continued"
 order: "1C"
 description: ""
 section: "Low Level Stuff"
@@ -17,7 +17,10 @@ Using only 1 and 0 means that we use a Base 2 (**bi**nary) counting system in co
 
 
 #### Counting
-In Base 2 2<sup>0</sup> = 1, 2<sup>1</sup> = 2, 2<sup>2</sup> = 4...
+In Base 2,\
+ 2<sup>0</sup> = 1,\
+  2<sup>1</sup> = 2,\
+  2<sup>2</sup> = 4...
 ![counting](./images/counting.png)
 
 `00000001` = 1\
