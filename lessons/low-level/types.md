@@ -1,7 +1,7 @@
 ---
 path: "/low-level/types"
 title: "Numeric Types"
-order: "1E"
+order: "1F"
 description: ""
 section: "Low Level Stuff"
 ---

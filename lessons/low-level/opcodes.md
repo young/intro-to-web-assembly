@@ -1,7 +1,7 @@
 ---
 path: "/low-level/opcodes"
 title: "OpCodes"
-order: "1D"
+order: "1E"
 description: ""
 section: "Low Level Stuff"
 ---

@@ -1,6 +1,6 @@
-class Loader {
+class WasmLoader {
     constructor() {
-       this._importObject = {
+       this._imports = {
             env: {
                 abort() {
                     throw new Error('Abort called from wasm file');
@@ -9,7 +9,7 @@ class Loader {
         };
     }
 
-    async wasm(path, imports = this._importObject) {
+    async wasm(path, imports = this._imports) {
         console.log(`fetching ${path}`);
 
         if (!WebAssembly.instantiateStreaming) {

@@ -1,6 +1,5 @@
-class Loader {
+class WasmLoader {
     constructor() {
-        const _importObjects = {};
     }
 
     async wasm(path) {

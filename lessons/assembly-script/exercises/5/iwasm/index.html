@@ -5,12 +5,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@assemblyscript/loader/umd/index.js"></script>
   <script src=/js/loader.js></script>
   <script >
-      const WasmLoader = new Loader();
-      WasmLoader.wasm('/build/untouched.wasm')
+      const WL = new WasmLoader();
+      WL.wasm('/build/untouched.wasm')
       .then(instance => {
-        const { minusOne, fizzbuzz } = instance;
-
-        document.write(fizzbuzz(3));
+        const { fizzbuzz, __getString } = instance;
+        const str = __getString(fizzbuzz(3));
+        document.write(str);
+        document.write(fizzbuzz(15));
+        document.write('<br/>');
+        __getString(fizzbuzz(15));
+        __getString(fizzbuzz(2));
       });
 
   </script>

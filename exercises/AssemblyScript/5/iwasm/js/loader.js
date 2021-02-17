@@ -1,5 +1,5 @@
 
-class Loader {
+class WasmLoader {
     constructor() {
        this._importObject = {
             env: {

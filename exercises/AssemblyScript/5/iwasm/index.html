@@ -5,8 +5,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@assemblyscript/loader/umd/index.js"></script>
   <script src=/js/loader.js></script>
   <script >
-      const WasmLoader = new Loader();
-      WasmLoader.wasm('/build/untouched.wasm')
+      const WL = new WasmLoader();
+      WL.wasm('/build/untouched.wasm')
       .then(instance => {
         const { minusOne, fizzbuzz } = instance;
 

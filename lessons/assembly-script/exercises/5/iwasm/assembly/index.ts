@@ -4,11 +4,18 @@ export function minusOne(n: i32): i32 {
 }
 
 
-export function fizzbuzz(n: i32): string {
-
-  if (n === 3) {
-    return 'a';
+export function fizzbuzz(n: i32): String | null {
+  if (n % 15 === 0) {
+    return 'fizzbuzz';
   }
 
-  return 'b';
+  if (n % 3 === 0) {
+    return 'fizz';
+  }
+
+  if (n % 5 === 0) {
+    return 'buzz';
+  }
+
+  return null;
 }
