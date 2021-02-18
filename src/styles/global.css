@@ -43,7 +43,7 @@
 
 .lesson {
   overflow: scroll;
-  @apply w-full md:w-3/4 lg:w-5/6 mx-auto p-10 m-8 border-2 border-gray rounded-xl bg-white z-10 shadow-md;
+  @apply w-full md:w-3/4 lg:w-3/5 mx-auto p-10 m-8 border-2 border-gray rounded-xl bg-white z-10 shadow-md;
 }
 
 .lesson h1, .lesson h2 {
