@@ -8,7 +8,9 @@ description: ""
 
 [TODO link to exercise 1](./exercises/1/iwasm)
 
-Let's get our environment set up.
+Let's get our environment set up
+
+
 
 #### Setup
 
