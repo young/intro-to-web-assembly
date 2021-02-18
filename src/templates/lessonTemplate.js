@@ -29,10 +29,10 @@ export default function Template(props) {
       </Link>
     ) : null;
   return (
-    <div className="lesson-container">
+    <div>
       <div className="lesson">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h2>{frontmatter.title}</h2>
+        <h3 className="text-black py-2">{frontmatter.date}</h3>
         <div
           className="lesson-content"
           dangerouslySetInnerHTML={{ __html: html }}

@@ -3,10 +3,9 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import { graphql, StaticQuery } from "gatsby";
 
-import "bootstrap/dist/css/bootstrap.css";
+import "../styles/global.css";
 import "prismjs/themes/prism-solarizedlight.css";
 import "code-mirror-themes/themes/monokai.css";
-import "./index.css";
 
 // import jpg from "../../static/posterframe.jpg";
 
@@ -67,15 +66,16 @@ const TemplateWrapper = props => {
                 {}
               ]}
             />
-            <div className="navbar navbar-light gradient">
-              <Link to="/" className="navbar-brand">
-                <h1>{data.site.siteMetadata.title}</h1>
+            <div className="bg-purple-dark p-4 md:p-10 grid whitespace-pre-wrap h-48">
+              <Link to="/" className="hover:text-gray hover:underline">
+                <h1 className="py-2">{data.site.siteMetadata.title}</h1>
+                <p className="text-white">By Jem Young</p>
               </Link>
-              {!frontmatter ? null : (
+              {/* {!frontmatter ? null : (
                 <h2>{`${frontmatter.section} – ${frontmatter.title}`}</h2>
-              )}
+              )} */}
             </div>
-            <div className="main">{props.children}</div>
+            <div className="flex-grow">{props.children}</div>
           </div>
         );
       }}
