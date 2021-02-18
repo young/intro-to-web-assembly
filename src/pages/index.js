@@ -2,7 +2,8 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Card from "../components/TOCCard";
 
-import "./index.css";
+import "../styles/global.css";
+
 
 const IndexPage = () => (
   <StaticQuery
@@ -33,12 +34,7 @@ const IndexPage = () => (
       }
     `}
     render={props => (
-      <div className="index">
-        <div className="jumbotron gradient">
-          <h1>{props.site.siteMetadata.title}</h1>
-          <h2>{props.site.siteMetadata.subtitle}</h2>
-        </div>
-
+      <div>
         <Card
           title="Contents"
           content={props.allMarkdownRemark.edges}

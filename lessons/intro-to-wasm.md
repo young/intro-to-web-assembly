@@ -6,11 +6,9 @@ section: "Introduction"
 description: "Introduction to Web Assembly by Jem Young"
 ---
 
-#Why web assembly
+## Why web assembly
 
 ## image of low to -> high level
-
-![Gatsby Logo](./images/logo.svg)
 
 #### Thick versus thin client
 
