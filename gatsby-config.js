@@ -11,7 +11,7 @@ module.exports = {
       "jem young"
     ]
   },
-  //pathPrefix: "/my-repo-name", // if you're using GitHub Pages, put the name of the repo here with a leading slash
+  pathPrefix: "/intro-to-web-assembly",
   plugins: [
     `gatsby-plugin-layout`,
     {

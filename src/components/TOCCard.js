@@ -4,8 +4,7 @@ import * as helpers from "../util/helpers";
 import "./TOCCard.css";
 
 const sortFn = helpers.sorter;
-const pathPrefix = '/intro-to-web-assembly';
-// const pathPrefix = '';
+
 const LessonCard = ({ content, title }) => {
   console.log(sortFn);
 
@@ -38,8 +37,8 @@ const LessonCard = ({ content, title }) => {
               <h3 className="lesson-section-title">{section[0].section}</h3>
               <ol>
                 {section.map(lesson => (
-                  <li key={`${pathPrefix}${lesson.path}`}>
-                    <Link to={`${pathPrefix}${lesson.path}`}>{lesson.title}</Link>
+                  <li key={lesson.path}>
+                    <Link to={lesson.path}>{lesson.title}</Link>
                   </li>
                 ))}
               </ol>
