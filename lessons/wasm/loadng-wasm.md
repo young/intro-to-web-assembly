@@ -1,7 +1,7 @@
 ---
 path: "/wasm/loading"
 section: "Web Assembly"
-title: "Loading Web Assembly"
+title: "Web Assembly Toolchain"
 order: "2E"
 description: ""
 ---
