@@ -21,10 +21,12 @@ JavaScript only has floating point numbers but most environments don't display t
 // 21
 ```
 
-> Note: [Number.MAX_SAFE_INTEGER](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) shows the largest integer that can be safely used in JavaScript.
+> Note: [Number.MAX\_SAFE\_INTEGER](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) shows the largest integer that can be safely used in JavaScript.
 
 
 Under the hood, numbers in JavaScript are 64-bit floating points whereas in Web Assembly all memory pointers are 32-bits.
 
 
 ![32 bits](./images/32bits.png)
+
+This is important because understanding memory is fundemental to working with Web Assembly.

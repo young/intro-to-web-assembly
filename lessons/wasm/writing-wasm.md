@@ -2,7 +2,7 @@
 path: "/wasm/writing"
 section: "Web Assembly"
 title: "Writing Web Assembly"
-order: "2C"
+order: "2D"
 description: ""
 ---
 

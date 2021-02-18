@@ -5,9 +5,9 @@
  (type $none_=>_none (func))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
  (type $i32_i32_=>_i32 (func (param i32 i32) (result i32)))
+ (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
  (type $i32_i32_i32_i32_=>_none (func (param i32 i32 i32 i32)))
  (type $none_=>_i32 (func (result i32)))
- (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
  (import "env" "abort" (func $~lib/builtins/abort (param i32 i32 i32 i32)))
  (memory $0 1)
  (data (i32.const 12) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\10\00\00\00f\00i\00z\00z\00b\00u\00z\00z\00\00\00\00\00\00\00\00\00\00\00\00\00")
@@ -43,6 +43,7 @@
  (global $~lib/memory/__heap_base i32 (i32.const 17068))
  (export "minusOne" (func $assembly/index/minusOne))
  (export "fizzbuzz" (func $assembly/index/fizzbuzz))
+ (export "add" (func $assembly/index/add))
  (export "__new" (func $~lib/rt/itcms/__new))
  (export "__pin" (func $~lib/rt/itcms/__pin))
  (export "__unpin" (func $~lib/rt/itcms/__unpin))
@@ -84,6 +85,13 @@
    return
   end
   i32.const 0
+ )
+ (func $assembly/index/add (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  local.get $0
+  local.get $1
+  i32.add
+  local.get $2
+  i32.add
  )
  (func $~lib/rt/itcms/Object#set:nextWithColor (param $0 i32) (param $1 i32)
   local.get $0

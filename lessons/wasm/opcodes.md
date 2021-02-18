@@ -1,7 +1,7 @@
 ---
 path: "/wasm/opcodes"
 title: "OpCodes"
-order: "2B"
+order: "2C"
 description: ""
 section: "Web Assembly"
 ---

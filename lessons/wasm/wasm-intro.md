@@ -14,4 +14,10 @@ Web Assembly (wasm) is a powerful low-level language that is meant to be a compi
 
 Web Assembly runs in its own environment at near native speed, can be cached, and runs much faster than JavaScript can be parsed.
 
-Let's walk through a simple example of a wasm function.
+#### File types
+Web Assembly has two file types:
+- `.wasm` is the actual assembly code in binary format
+- `.wat` is the human readable textual representation of the code
+
+
+![wasm-v-wat](./images/wasm-v-wat.png)

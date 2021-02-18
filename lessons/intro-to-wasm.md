@@ -12,7 +12,7 @@ description: "Introduction to Web Assembly by Jem Young"
 
 ![Gatsby Logo](./images/logo.svg)
 
-## Check out a code sample
+#### Thick versus thin client
 
 ```js
 const x = 2 + 2;

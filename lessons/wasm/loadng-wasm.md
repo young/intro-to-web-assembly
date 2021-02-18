@@ -2,7 +2,7 @@
 path: "/wasm/loading"
 section: "Web Assembly"
 title: "Loading Web Assembly"
-order: "2D"
+order: "2E"
 description: ""
 ---
 
