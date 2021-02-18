@@ -45,5 +45,6 @@ I've found this [site](https://www.bbc.co.uk/bitesize/guides/z3fgcdm/revision/2)
 <details>
   <summary>What number does 1F7 represent?</summary>
 
-`503`
+`503`\
+(**256** * 1) + (**16** * 15) + (**1** * 7) = 503
 </details>

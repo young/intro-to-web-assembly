@@ -6,7 +6,7 @@ title: "AssemblyScript Setup"
 description: ""
 ---
 
-[TODO link to exercise 1](./exercises/1/iwasm)
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/exercises/AssemblyScript/1/iwasm)
 
 Let's get our environment set up.
 
@@ -15,6 +15,8 @@ Let's get our environment set up.
 #### Setup
 
 Make sure we’re on latest version of node
+> We need to be version 14 or above.
+
 ```bash
 $ nvm install --lts
 ```

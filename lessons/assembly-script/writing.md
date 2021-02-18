@@ -5,6 +5,7 @@ order: "3D"
 title: "Writing AssemblyScript"
 description: ""
 ---
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/exercises/AssemblyScript/1/iwasm)
 
 Let's start off with our minusOne example.
 
@@ -15,7 +16,7 @@ export function minusOne(n) {
 ```
 
 
-Converting this function to AssemblyScript is straightforward. We just need to add types for the function argument and return value. AssemblyScript automatically looks in the `assembly` directory for files to compile.
+Converting this function to AssemblyScript is straightforward. We just need to add types for the function argument and return value. AssemblyScript automatically looks in the `/assembly` directory for files to compile.
 
 ```js
 // /assembly/index.ts

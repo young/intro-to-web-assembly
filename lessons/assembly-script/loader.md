@@ -1,11 +1,32 @@
 ---
 path: "/assembly-script/loader"
 section: "AssemblyScript"
-order: "3F"
+order: "3G"
 title: "AssemblyScript Loader"
 description: ""
 
 ---
+
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/exercises/AssemblyScript/5/iwasm)
+
+
+#### Exercise
+
+Implement fizzbuzz in AssemblyScript.
+
+Hint:
+
+```
+  if (number is divisible by 15) then
+	"fizzbuzz"
+  if (number is divisible by 3) then
+	"fizz"
+  if (number is divisible by 5) then
+	"buzz"
+  ```
+
+
+
 ```js
 // assembly/index.ts
 export function fizzbuzz(n: i32): String | null {

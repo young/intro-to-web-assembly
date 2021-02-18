@@ -29,18 +29,3 @@ $ node
 > minusOne(2);
 // 1
 ```
-
-For our next exercise let's try something a little bit trickier.
-
-Implement fizzbuzz in AssemblyScript.
-
-Hint:
-
-```
-  if (number is divisible by 15) then
-	"fizzbuzz"
-  if (number is divisible by 3) then
-	"fizz"
-  if (number is divisible by 5) then
-	"buzz"
-  ```
