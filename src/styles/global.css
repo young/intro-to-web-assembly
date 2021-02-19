@@ -74,4 +74,14 @@
   float: left;
 }
 
+.lesson-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
+blockquote {
+  background: #cecccc;
+  padding-left: 9px;
+  border-left: 4px solid #ff9800;
+}

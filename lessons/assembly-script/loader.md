@@ -1,13 +1,13 @@
 ---
 path: "/assembly-script/loader"
 section: "AssemblyScript"
-order: "3G"
+order: "3H"
 title: "AssemblyScript Loader"
 description: ""
 
 ---
 
-###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/exercises/AssemblyScript/5/iwasm)
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/lessons/assembly-script/exercises/5/iwasm)
 
 
 #### Exercise

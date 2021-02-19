@@ -6,7 +6,7 @@ title: "AssemblyScript Setup"
 description: ""
 ---
 
-###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/exercises/AssemblyScript/1/iwasm)
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/lessons/assembly-script/exercises/1/iwasm)
 
 Let's get our environment set up.
 

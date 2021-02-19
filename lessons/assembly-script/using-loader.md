@@ -1,7 +1,7 @@
 ---
 path: "/assembly-script/loader-usage"
 section: "AssemblyScript"
-order: "3G"
+order: "3H"
 title: "Using the AssemblyScript loader"
 description: ""
 
