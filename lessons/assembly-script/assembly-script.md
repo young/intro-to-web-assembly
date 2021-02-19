@@ -6,7 +6,6 @@ title: "What is AssemblyScript"
 description: ""
 
 ---
+![AssemblyScript](./images/as.png)
 
-This is page three.
-
-I think it is a good page.
+[AssemblyScript](https://www.assemblyscript.org/introduction.html) at high level is a TypeScript to WebAssembly compiler. It provides both high-level language features such loops but also allows for low-level memory access.

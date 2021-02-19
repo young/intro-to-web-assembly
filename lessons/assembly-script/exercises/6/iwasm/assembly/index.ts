@@ -1,5 +1,16 @@
 declare function log(n: i32): void
 
+memory.grow(2);
+store<u8>(0, 21);
+store<u8>(1, 99);
+
+export function readMemory(n: i32): i32 {
+    const valueAtIndexOne = load<u8>(n);
+    return valueAtIndexOne;
+}
+
+
+
 export function minusOne(n: i32): i32 {
   log(n);
   return n - 1;

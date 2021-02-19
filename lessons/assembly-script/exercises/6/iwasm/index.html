@@ -8,9 +8,15 @@
       const WL = new WasmLoader();
       WL.wasm('/build/optimized.wasm')
       .then(instance => {
-        const { fizzbuzz, __getString } = instance;
-        const str = __getString(fizzbuzz(3));
-        document.write(str);
+        const { readMemory, memory } = instance;
+
+        const memoryArray = new Uint8Array(memory.buffer);
+
+        document.write(memoryArray[1]);
+        document.write('<br/>');
+
+        memoryArray[2] = 42;
+        document.write(readMemory(2));
       });
 
   </script>

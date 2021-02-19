@@ -67,8 +67,3 @@ i32.const 99 ;; push 99 onto the stack
 <iframe src="https://webassembly.studio/?embed&f=nv688an8wxd" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 </details>
-
-
-#### Heaps
-
-A heap is dynamic, non-linear memory used by a program to arbitrarily read and store data.

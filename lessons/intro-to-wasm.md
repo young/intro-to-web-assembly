@@ -5,20 +5,13 @@ order: "0B"
 section: "Introduction"
 description: "Introduction to Web Assembly by Jem Young"
 ---
+![low to high](./images/lowhigh.png)
 
 ## Why web assembly
+With the rise of the internet almost every personal computer has a web browser and with it, a powerful standardized platform which Frontend Engineers use to build and create using JavaScript, HTML, and CSS. Over the past few years, non-frontned engineers have increasingly wanted to utilize the browser to build and create but were limited because to work on the frontend you have to know JavaScript.
 
-## image of low to -> high level
+Web Assembly bridges that gap and allows languages like C and Rust to be compiled into a language that the browser understands and works in _tandem_ with JavaScript.
 
-#### Thick versus thin client
-
-```js
-const x = 2 + 2;
-```
-
-- This is a link to [Frontend Masters][fem].
-- This another link to [Brian Holt's Twitter](https://twitter.com/holtbt).
-- Here's another link to a [site built with this starter][containers].
-
-[fem]: https://www.frontendmasters.com
-[containers]: https://btholt.github.io/complete-intro-to-containers/
+-- Runs at near native speed\
+-- Is memory safe\
+-- Designed to run on many platforms, not just the browser

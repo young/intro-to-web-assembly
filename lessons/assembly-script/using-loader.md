@@ -1,13 +1,14 @@
 ---
 path: "/assembly-script/loader-usage"
 section: "AssemblyScript"
-order: "3H"
+order: "3I"
 title: "Using the AssemblyScript loader"
 description: ""
 
 ---
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/lessons/assembly-script/exercises/5/iwasm)
 
-Using the loader to fetch and instantiate our wasm lets us access some useful utility functions. First we need to update our `WasmLoader` class.
+Using the loader to fetch and instantiate our wasm lets us access some useful utility functions but we need to update our `WasmLoader` class to export them.
 
 ```js
 // js/loader.js

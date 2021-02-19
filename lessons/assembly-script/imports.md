@@ -72,4 +72,40 @@ Add the import object to both methods
         return instance?.exports;
     }
 ```
-Loading the page now throws an exception.
+Loading the page now throws an exception. Remove the `abort()` call for now and rebuild the wasm code.
+
+#### Defining imports
+###### [Working repo](https://github.com/young/intro-to-web-assembly/tree/main/lessons/assembly-script/exercises/3/iwasm)
+
+AssemblyScript has several [imports built into its loader](https://www.assemblyscript.org/exports-and-imports.html#imports-2) (which we'll cover a bit later) so we didn't have to manually declare `abort()`. For other JavaScript functions imported into AssemblyScript we need to define them before they can be imported.
+
+To define a custom import in AssemblyScript we declare it's function signature. Here we're defining a log function that will allow us to call `console.log()` from Web Assembly code.
+
+```js
+// assembly/index.ts
+declare function log(n: i32): void
+
+export function minusOne(n: i32): i32 {
+  log(n);
+  return n - 1;
+}
+```
+
+Add the function to the import object.
+```js
+// js/loader.js
+    constructor() {
+       this._imports = {
+            env: {
+                abort() {
+                    throw new Error('Abort called from wasm file');
+                }
+            },
+            index: {
+                log(n) {
+                    console.log(n);
+                }
+            }
+        };
+    }
+```

@@ -1,8 +1,8 @@
 (module
  (type $i32_=>_none (func (param i32)))
  (type $i32_i32_=>_none (func (param i32 i32)))
- (type $none_=>_none (func))
  (type $i32_=>_i32 (func (param i32) (result i32)))
+ (type $none_=>_none (func))
  (type $i32_i32_=>_i32 (func (param i32 i32) (result i32)))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
  (type $i32_i32_i32_i32_=>_none (func (param i32 i32 i32 i32)))
@@ -42,6 +42,7 @@
  (global $~lib/rt/itcms/fromSpace (mut i32) (i32.const 0))
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
  (global $~lib/rt/__rtti_base i32 (i32.const 1680))
+ (export "readMemory" (func $assembly/index/readMemory))
  (export "minusOne" (func $assembly/index/minusOne))
  (export "fizzbuzz" (func $assembly/index/fizzbuzz))
  (export "__new" (func $~lib/rt/itcms/__new))
@@ -51,6 +52,10 @@
  (export "__rtti_base" (global $~lib/rt/__rtti_base))
  (export "memory" (memory $0))
  (start $~start)
+ (func $assembly/index/readMemory (param $0 i32) (result i32)
+  local.get $0
+  i32.load8_u
+ )
  (func $assembly/index/minusOne (param $0 i32) (result i32)
   local.get $0
   call $assembly/index/log
@@ -1913,6 +1918,15 @@
   unreachable
  )
  (func $~start
+  i32.const 2
+  memory.grow
+  drop
+  i32.const 0
+  i32.const 21
+  i32.store8
+  i32.const 1
+  i32.const 99
+  i32.store8
   i32.const 1280
   call $~lib/rt/itcms/initLazy
   global.set $~lib/rt/itcms/pinSpace

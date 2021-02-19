@@ -22,7 +22,7 @@ function example(n) {
 }
 ```
 
-The equivalent Web Assembly function is a bit more verbose:s
+The equivalent Web Assembly function is a bit more...verbose
 
 ```wasm
 
@@ -50,3 +50,5 @@ The equivalent Web Assembly function is a bit more verbose:s
   i32.mul
  )
  ```
+
+As we can see writing Web Assembly by hand isn't terribly practical. Fortunately we have AssemblyScript.

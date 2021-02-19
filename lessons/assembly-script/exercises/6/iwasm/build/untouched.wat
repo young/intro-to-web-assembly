@@ -42,6 +42,7 @@
  (global $~lib/memory/__data_end i32 (i32.const 684))
  (global $~lib/memory/__stack_pointer (mut i32) (i32.const 17068))
  (global $~lib/memory/__heap_base i32 (i32.const 17068))
+ (export "readMemory" (func $assembly/index/readMemory))
  (export "minusOne" (func $assembly/index/minusOne))
  (export "fizzbuzz" (func $assembly/index/fizzbuzz))
  (export "__new" (func $~lib/rt/itcms/__new))
@@ -51,6 +52,24 @@
  (export "__rtti_base" (global $~lib/rt/__rtti_base))
  (export "memory" (memory $0))
  (start $~start)
+ (func $start:assembly/index
+  i32.const 2
+  memory.grow
+  drop
+  i32.const 0
+  i32.const 21
+  i32.store8
+  i32.const 1
+  i32.const 99
+  i32.store8
+ )
+ (func $assembly/index/readMemory (param $0 i32) (result i32)
+  (local $1 i32)
+  local.get $0
+  i32.load8_u
+  local.set $1
+  local.get $1
+ )
  (func $assembly/index/minusOne (param $0 i32) (result i32)
   local.get $0
   call $assembly/index/log
@@ -2572,6 +2591,7 @@
   unreachable
  )
  (func $~start
+  call $start:assembly/index
   i32.const 256
   call $~lib/rt/itcms/initLazy
   global.set $~lib/rt/itcms/pinSpace

@@ -5,11 +5,11 @@
   <script src=/js/loader.js></script>
   <script>
       const WL = new WasmLoader();
-      WL.wasm('/build/untouched.wasm')
+      WL.wasm('/build/optimized.wasm')
       .then(instance => {
         const { minusOne } = instance;
 
-        document.write(minusOne(0));
+        document.write(minusOne(44));
       });
 
   </script>
