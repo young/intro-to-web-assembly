@@ -7,8 +7,15 @@ description: "Introduction to Web Assembly by Jem Young"
 ---
 Thanks!
 
+#### Issues/Comments/Corrections
+See a spelling/grammar mistake or feel that information is missing? [File an issue](https://github.com/young/intro-to-web-assembly/issues) and pull requests are always welcome.
+
 
 #### Further resources
 - [Wasi](https://wasi.dev/) - WebAssembly System Interface. A common API to operating-system-like features.
 - [Made with Web Assembly](https://madewithwebassembly.com/) - An open source showcase of awesome production applications, side projects, and use cases made with WebAssembly.
 - [ASBind](https://github.com/torch2424/as-bind) - Library to handle passing high-level data structures between AssemblyScript and JavaScript
+- [Binaryen](https://github.com/WebAssembly/binaryen) - Binaryen is a compiler and toolchain infrastructure library for WebAssembly.
+- [Emscripten](https://emscripten.org/) - A complete compiler toolchain to WebAssembly.
+- [Built With AssemblyScript](https://www.assemblyscript.org/built-with-assemblyscript.html#built-with-assemblyscript) - A collection of AssemblyScript projects
+- [Interference AssemblyScript](https://www.assemblyscript.org/examples/interference.html#example) - Advanced example of using AssemblyScript
