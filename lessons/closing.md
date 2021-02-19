@@ -19,3 +19,13 @@ See a spelling/grammar mistake or feel that information is missing? [File an iss
 - [Emscripten](https://emscripten.org/) - A complete compiler toolchain to WebAssembly.
 - [Built With AssemblyScript](https://www.assemblyscript.org/built-with-assemblyscript.html#built-with-assemblyscript) - A collection of AssemblyScript projects
 - [Interference AssemblyScript](https://www.assemblyscript.org/examples/interference.html#example) - Advanced example of using AssemblyScript
+
+
+#### Thanks
+Special thanks to [Brian Holt](https://twitter.com/holtbt) for creating this course starter kit.
+
+The **entire** team at Frontend Masters. They make producing content painless and I'm eternally grateful for all their work.
+
+[Luna Yu](https://twitter.com/lunaceee) and [Justine Benoit](https://twitter.com/justinechlorine) for helping with site design.
+
+And of course my wife and son who put up with my rants about CPU instructions and Fast and Furious trivia.
