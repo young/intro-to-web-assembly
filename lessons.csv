@@ -1,3 +1,4 @@
 path,title,order,section,description
 "/intro","Hello","0A","Introduction","Introduction to Web Assembly by Jem Young"
 "/intro-to-wasm","Introduction to Web Assembly","0B","Introduction","Introduction to Web Assembly by Jem Young"
+"/closing","In closing","5A","Conclusion","Introduction to Web Assembly by Jem Young"
