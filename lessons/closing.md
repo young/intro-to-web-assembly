@@ -5,7 +5,7 @@ order: "5A"
 section: "Conclusion"
 description: "Introduction to Web Assembly by Jem Young"
 ---
-Thanks!
+We did it! We've written Web Assembly, AssemblyScript, and learned how it all works together. The next step is to deep dive and make more complex, beautiful creations using wasm. Go forth and build!
 
 #### Issues/Comments/Corrections
 See a spelling/grammar mistake or feel that information is missing? [File an issue](https://github.com/young/intro-to-web-assembly/issues) and pull requests are always welcome.
