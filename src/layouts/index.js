@@ -57,15 +57,18 @@ const TemplateWrapper = props => {
               ]}
             />
             <div className="bg-purple-dark p-4 md:p-10 grid whitespace-pre-wrap h-48">
-              <Link to="/" className="hover:text-gray hover:underline">
+              <div className="grid justify-items-center">
+                <div className="w-16 h-16 rounded-full bg-gray md:-mt-20 -mt-12"></div>
+              </div>
+              <Link to="/" className="hover:text-gray hover:underline mx-auto md:flex md:space-x-6 lg:space-x-32 justify-between">
                 <h1 className="py-2">{data.site.siteMetadata.title}</h1>
-                <p className="text-white">By Jem Young</p>
+                <p className="text-white md:self-end">By Jem Young</p>
               </Link>
               {/* {!frontmatter ? null : (
                 <h2>{`${frontmatter.section} – ${frontmatter.title}`}</h2>
               )} */}
             </div>
-            <div className="flex-grow">{props.children}</div>
+            <div>{props.children}</div>
           </div>
         );
       }}
