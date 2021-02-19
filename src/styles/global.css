@@ -22,14 +22,13 @@
     }
 
     body {
-      @apply flex flex-col min-h-screen bg-gray
+      @apply bg-gray
     }
 }
 
 
 .lesson-content td {
-  border: 1px solid black;
-  padding: 8px;
+  @apply border-2 border-black p-2
 }
 
 .lesson-content p {
@@ -42,12 +41,17 @@
 
 
 .lesson {
-  overflow: scroll;
-  @apply w-full md:w-3/4 lg:w-3/5 mx-auto p-10 m-8 border-2 border-gray rounded-xl bg-white z-10 shadow-md;
+  @apply w-full max-w-4xl md:w-4/5 mx-auto p-10 m-8 border-2 border-gray rounded-xl bg-white z-10 shadow-md;
 }
 
 .lesson h1, .lesson h2 {
   @apply text-black text-center m-10 text-4xl font-semibold;
+}
+
+.lesson-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .lesson p {
@@ -59,7 +63,7 @@
 }
 
 .lesson-links {
-  @apply mt-10;
+  @apply mt-10 mb-20;
 }
 
 .next {
@@ -70,8 +74,4 @@
   float: left;
 }
 
-.lesson-title {
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+

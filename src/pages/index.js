@@ -34,12 +34,10 @@ const IndexPage = () => (
       }
     `}
     render={props => (
-      <div>
         <Card
           title="Contents"
           content={props.allMarkdownRemark.edges}
         />
-      </div>
     )}
   />
 );
