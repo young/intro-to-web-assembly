@@ -1,4 +1,4 @@
 order,title,link0,link1,link2,link3,link4,link5,link6,link7
 0A,Hello,https://www.netflix.com,https://frontendhappyhour.com/,https://frontendmasters.com/teachers/jem-young/,https://www.youtube.com/watch?v=qouPzSryggk,https://twitter.com/jemyoung,https://www.linkedin.com/in/jemyoung/,https://frontendmasters.com/courses/fullstack-v2/,https://frontendmasters.com/courses/interviewing-frontend/
 0B,Introduction to Web Assembly,,,,,,,,
-5A,In closing,https://wasi.dev/,https://madewithwebassembly.com/,https://github.com/torch2424/as-bind,,,,,
+5A,In closing,https://github.com/young/intro-to-web-assembly/issues,https://wasi.dev/,https://madewithwebassembly.com/,https://github.com/torch2424/as-bind,https://github.com/WebAssembly/binaryen,https://emscripten.org/,https://www.assemblyscript.org/built-with-assemblyscript.html#built-with-assemblyscript,https://www.assemblyscript.org/examples/interference.html#example
