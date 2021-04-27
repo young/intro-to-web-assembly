@@ -68,9 +68,9 @@
 <span class="token keyword">class</span> <span class="token class-name">WasmLoader</span> <span class="token punctuation">{</span>
     <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    <span class="token function">wasm</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">async</span> <span class="token function">wasm</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    <span class="token function">wasmFallback</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">async</span> <span class="token function">wasmFallback</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>Our <code class="language-text">wasm()</code> method takes a path to the wasm file and will return the exported wasm functions. The <code class="language-text">wasmFallback()</code> method is for browsers that don't support <code class="language-text">instantiateStreaming()</code>.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// js/loader.js</span>
@@ -78,7 +78,7 @@
 <span class="token keyword">class</span> <span class="token class-name">WasmLoader</span> <span class="token punctuation">{</span>
     <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    <span class="token function">wasm</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">wasm</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">fetching </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>WebAssembly<span class="token punctuation">.</span>instantiateStreaming<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -90,7 +90,7 @@
         <span class="token keyword">return</span> instance<span class="token operator">?.</span>exports<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    <span class="token function">wasmFallback</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">async</span> <span class="token function">wasmFallback</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p><code class="language-text">wasmFallback()</code> works the same as <code class="language-text">wasm()</code> with the exeception that we need to create an intermediate array buffer before instantiating our module.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// js/loader.js</span>
@@ -98,7 +98,7 @@
 <span class="token keyword">class</span> <span class="token class-name">WasmLoader</span> <span class="token punctuation">{</span>
     <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-    <span class="token function">wasm</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">wasm</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">fetching </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>WebAssembly<span class="token punctuation">.</span>instantiateStreaming<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -110,7 +110,7 @@
         <span class="token keyword">return</span> instance<span class="token operator">?.</span>exports<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    <span class="token function">wasmFallback</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">wasmFallback</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'using fallback'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">const</span> bytes <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token operator">?.</span><span class="token function">arrayBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
