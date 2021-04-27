@@ -27,9 +27,9 @@ We're fetching wasm from our server so let's use `instantiate()` and `instantiat
 class WasmLoader {
     constructor(){}
 
-    wasm(path){}
+    async wasm(path){}
 
-    wasmFallback(path){}
+    async wasmFallback(path){}
 }
 ```
 
@@ -41,7 +41,7 @@ Our `wasm()` method takes a path to the wasm file and will return the exported w
 class WasmLoader {
     constructor(){}
 
-    wasm(path) {
+    async wasm(path) {
         console.log(`fetching ${path}`);
 
         if (!WebAssembly.instantiateStreaming) {
@@ -53,7 +53,7 @@ class WasmLoader {
         return instance?.exports;
     }
 
-    wasmFallback(path){}
+    async wasmFallback(path){}
 }
 ```
 
@@ -65,7 +65,7 @@ class WasmLoader {
 class WasmLoader {
     constructor(){}
 
-    wasm(path) {
+    async wasm(path) {
         console.log(`fetching ${path}`);
 
         if (!WebAssembly.instantiateStreaming) {
@@ -77,7 +77,7 @@ class WasmLoader {
         return instance?.exports;
     }
 
-    wasmFallback(path){
+    async wasmFallback(path){
         console.log('using fallback');
         const response = await fetch(path);
         const bytes = await response?.arrayBuffer();
