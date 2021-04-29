@@ -23,7 +23,7 @@ $ nvm install --lts
 
 Install npx
 ```bash
-$ npm -i -g npx
+$ npm i -g npx
 ```
 
 Create working directory
