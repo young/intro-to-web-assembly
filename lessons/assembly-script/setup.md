@@ -42,7 +42,7 @@ $ npm i --save-dev assemblyscript
 ```
 
 
-Scaffold and buuld an empty project
+Scaffold and build an empty project
 ```bash
 $ npx asinit .
 $ npm run asbuild

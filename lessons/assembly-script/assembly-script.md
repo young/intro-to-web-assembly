@@ -8,4 +8,4 @@ description: ""
 ---
 ![AssemblyScript](./images/as.png)
 
-[AssemblyScript](https://www.assemblyscript.org/introduction.html) at high level is a TypeScript to WebAssembly compiler. It provides both high-level language features such loops but also allows for low-level memory access.
+[AssemblyScript](https://www.assemblyscript.org/introduction.html) at high level is a TypeScript to WebAssembly compiler. It provides both high-level language features such as loops but also allows for low-level memory access.
