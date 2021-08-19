@@ -49,7 +49,7 @@ I've found this [site](https://www.bbc.co.uk/bitesize/guides/z3fgcdm/revision/2)
 
 </details>
 
-> Note on the origins of Hexidecimal:\
+> Note on the origins of Hexadecimal:\
 An 8 bit byte can be split into 2 * 4 bit "nibbles".\
 \
 For example:
@@ -67,4 +67,4 @@ It came about when early computer engineers had to write down binary codes (befo
 \
 So 2 hexadecimal digits are just a convenient way (or shorthand even) to represent an 8 bit binary byte.
 \
-via [Simon Cobb](www.simoncobb.co.uk)
+via [Simon Cobb](https://www.simoncobb.co.uk)
