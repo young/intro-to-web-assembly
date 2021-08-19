@@ -40,11 +40,31 @@ Confused? Totally ok! The first time coming across hex may seem a bit daunting b
 
 I've found this [site](https://www.bbc.co.uk/bitesize/guides/z3fgcdm/revision/2) by the BBC useful for understanding hexadecimal.
 
-
 #### Exercise
 <details>
   <summary>What number does 1F7 represent?</summary>
 
 `503`\
 (**256** * 1) + (**16** * 15) + (**1** * 7) = 503
+
 </details>
+
+> Note on the origins of Hexidecimal:\
+An 8 bit byte can be split into 2 * 4 bit "nibbles".\
+\
+For example:
+`11001011` can be split into
+`1100` and `1011`
+\
+Each 4 bit nibble is a number between 0 & 15 (a single hex digit).
+\
+\
+So a byte of 8 bits (that are difficult to remember and prone to errors if copying from a book) can be represented in 2 hex digits (easier to remember when copying from a book).
+\
+\
+It came about when early computer engineers had to write down binary codes (before printers even) and so many errors crept in that they realised they had to come up with a method that would reduce the number of errors that would occur.
+\
+\
+So 2 hexadecimal digits are just a convenient way (or shorthand even) to represent an 8 bit binary byte.
+\
+via [Simon Cobb](www.simoncobb.co.uk)
