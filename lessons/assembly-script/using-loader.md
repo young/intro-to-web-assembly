@@ -48,8 +48,8 @@ if (!ptr) return null;
 const buffer = memory.buffer;
 ```
 ```js
-// Load wasm memory into a 32 bit unsigned integer array
-const id = new Uint32Array(memory)
+// Load wasm memory buffer into a 32 bit unsigned integer array
+const id = new Uint32Array(buffer)
 ```
 ```js
 // The memory location of the string is at pointer + the runtime header offset
