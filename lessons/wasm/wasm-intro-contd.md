@@ -14,7 +14,7 @@ The fundamental unit of code is a module. Within the module, we create functions
 > A Web Assembly module is a tree-based structure known as an [S-expression](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format#s-expressions). Just thought you'd like to know.
 
 #### Web Assembly Studio
-We're going use [Web Assembly Studio](https://webassembly.studio/) to write our first [hello world](https://webassembly.studio/?f=a8z71cwsulu).
+We're going use [Web Assembly Studio](https://wasm-studio.surge.sh/) to write our first hello world.
 
 Our function will take a 32-bit integer as input and return the input unmodified.
 ```wasm
